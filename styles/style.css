@@ -1,0 +1,248 @@
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+.banner{
+    background: rgba(255, 144, 14, 0.1);
+    text-align: center;
+    padding: 20px;
+    animation-name: example;
+  animation-duration: 4s;
+}
+/* nav style */
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 200px;
+    align-items: center;
+}    
+    nav ul{
+        display: flex;
+        align-items: center;
+    }
+
+.nav-title{
+    font-weight: 700;
+    font-size: 45px;
+}
+nav li{
+    list-style: none;
+    margin: 30px;
+    font-weight: 500;
+    font-size: 18px;
+}
+/* banner style */
+.banner-detail{
+    text-align: center;
+    margin: 50px;
+}
+.brand-title{
+    font-weight: 700;
+font-size: 50px;
+margin-bottom: 30px;
+}
+p{
+    margin-bottom: 30px;
+    color: #727272;
+}
+/* button style */
+button{
+    width: 180px;
+    height: 64px;
+    left: 870px;
+    top: 463px;
+    color: white;
+    background: #FF900E;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+}
+img{
+    width: 70%;
+}
+/* grid section style */
+.grid-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 50px;
+    align-items: center;
+    padding: 50px;
+    column-gap: 50px;
+}
+.grids{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.list-headline{
+    font-weight: 700;
+    font-size: 45px; 
+}
+.text1{
+    color: #727272;
+    font-weight: 500;
+    font-size: 45px;
+}
+.text2{
+    color: #FF900E;
+}
+.img-grid{
+    height: 240px;
+    width: 240px;
+    padding: 10px;
+}
+/* features details style */
+.features{
+    width: 80%;
+    padding: 0px;
+    column-gap: 100px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    margin: auto;
+}
+.feature-headline{
+    padding: 10px 30px;
+    font-weight: 400;
+    font-size: 30px;
+    border-left:5px solid #FF900E;
+}
+.feature-detail{
+    margin: auto;
+}
+.feature-smmry{
+    padding: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+/* transform using as extra */
+.feature-button button{
+    transform: translate(-60%,-400%);
+}
+.feature-smmry h3{
+    margin: 10px;
+}
+/* some facts section */
+.fact-head{
+    margin: 10px 150px;
+}
+
+.facts-container{
+    display: flex;
+    margin: 50px;
+    padding: 50px;
+    justify-content: space-evenly;
+
+}
+.fact-detail{
+    border:1px solid #FF900E;
+    padding: 30px 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+.fact-detail >img{
+    width: 45px;
+    height: 45px;
+}
+/* sponsor  section style */
+.sponsor{
+    text-align: center;
+}
+.sponsor-head  h1,.fact-head h1{
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 45px;
+}
+.sponsor-container{
+    display: flex;
+    margin: 50px;
+    padding: 10px;
+    justify-content: space-evenly;
+    
+}
+.sponsor-container img{
+    width: 150px;
+    height: 50px;
+    mix-blend-mode: luminosity;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+/* footer */
+footer{
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    background: #FFF4E7;
+    border-radius: 8px;
+
+}
+
+.about{
+    margin-top: 130px;
+    background: #FFF8F3;
+    border-radius: 10px;
+    padding: 130px 150px;
+    text-align: center;
+}
+.section-title{
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+}
+.p2{
+    color: #757575;
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+/* about section extra */
+.about-info-container{
+    display: flex;
+    justify-content: space-around;
+}
+.about .info-title{
+    font-size: 20px;
+    color: #757575;
+}
+.info-description{
+    font-weight: 700;
+    font-size: 20px;
+    color: #474747;
+
+}
+/* for mobile device...responsive layout */
+@media screen and (max-width:576px) {
+    .banne1{
+        width: 100%;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .grid-section{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .grids{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .features{
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+    
+    }
+    .facts-container{
+        flex-direction: column;
+    }
+    .sponsor-container{
+        flex-direction: column;
+    }
+    .about-info-container{
+        flex-direction: column;
+    }
+}
+/* extra animation */
+@keyframes example {
+    from {background: rgba(255, 144, 14, 0.1);}
+    to {background-color: rgb(90, 170, 144);}
+  }
